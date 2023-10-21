@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f6f5f5;
+}
+
+.container{
+    background-color: #fff;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #0808081a;
+    font-family: Arial, sans-serif;
+    transition: all ease-in 0.2s;
+}
+
+.container:hover{
+    box-shadow: 0 0 70px #0000003f;
+    width: 402px;
+}
+
+.loginbox{
+    padding: 40px;
+}
+
+h1{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.logininput{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.logininput input{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 17px;
+    padding: 10px 0px;
+    transition: border-color 0.5s;
+}
+
+.logininput label{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 18px;
+    color: #767575;
+    transition: all 0.2s;
+}
+
+.logininput input:focus,
+.logininput input:valid{
+    border-color: #1e87f0;
+}
+
+.logininput input:focus ~ label,
+.logininput input:valid ~ label{
+    top: -20px;
+    font-size: 15px;
+    color: #1e87f0;
+}
+
+.btn{
+    font-size: 18px;
+    color: #fff;
+    background-color: #1e87f0;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 8px;
+    transition: all ease-in 0.2s;
+}
+
+.btn:hover{
+    background-color: #116ecb;
+    font-size: 19px;
+    cursor: pointer;
+}
